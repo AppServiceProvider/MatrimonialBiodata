@@ -1,0 +1,93 @@
+
+div.maudio .audio{height:0;overflow:hidden;display:none;}
+div.maudio .audio-control{
+  overflow:hidden;
+  margin-top:10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+div.maudio .audio-control a,
+div.maudio .audio-control div{
+  float:left;
+  margin:0 5px;
+  cursor:pointer;
+}
+div.maudio .audio-control a{
+  display:block;
+  background:url(../voice/audio_icon.png) no-repeat 0 0;
+  width:30px;
+  height:30px;
+  text-align:center;
+  text-decoration:none;
+  overflow:hidden;
+}
+div.maudio .audio-control a.play{
+  border-radius:50%;
+  background-color:#e6183f;
+  background-position:10px 8px;
+}
+div.maudio.playing .audio-control a.play{
+  background-position:11px -22px;
+}
+div.maudio .audio-control a.fast-reverse,
+div.maudio .audio-control a.fast-forward{
+  width:17px;
+  height:17px;
+  margin-top:7px;
+  background-position:-50px 1px;
+}
+div.maudio .audio-control a.fast-reverse{
+  background-position:-50px -59px;
+
+}
+div.maudio .audio-control a.fast-forward:hover{
+  background-position:-50px -29px;
+}
+div.maudio .audio-control a.fast-reverse:hover{
+  background-position:-50px -89px;
+}
+
+div.maudio .audio-control .progress-bar{
+  width:145px;
+  height:8px;
+  margin:11px 5px;
+  border-radius:3px;
+  background:#afafaf;
+  overflow:hidden;
+}
+div.maudio .audio-control .progress-pass{
+  width:0;
+  height:8px;
+  margin:0;
+  border-radius:3px;
+  background:#e6183f;
+}
+div.maudio .audio-control .time-keep{
+  height:30px;
+  line-height:30px;
+  color:#45556c;
+  cursor:default;
+}
+div.maudio .audio-control .mute{
+  width:21px;
+  height:17px;
+  margin-top:7px;
+  background-position:0 -60px;
+}
+div.maudio .audio-control .mute.muted{
+  background-position:0 -90px;
+}
+div.maudio .audio-control .volume-bar{
+  width:50px;
+  height:5px;
+  margin-top:13px;
+  border-radius:2px;
+  background:#afafaf;
+}
+div.maudio .audio-control .volume-pass{
+  width:100%;
+  height:5px;
+  margin:0;
+  border-radius:2px;
+  background:#e6183f;
+}
